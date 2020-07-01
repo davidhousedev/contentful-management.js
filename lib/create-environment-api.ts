@@ -1018,6 +1018,7 @@ export default function createEnvironmentApi({
         .put(`tags/${id}`, {
           name,
           sys: {
+            type: 'Tag',
             id,
           },
         })
