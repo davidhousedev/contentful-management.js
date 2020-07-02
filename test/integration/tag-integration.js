@@ -1,4 +1,4 @@
-export async function tagTests (t, space) {
+export async function tagTests(t, space) {
   await t.test('create tag', async () => {
     const tagId = randomTagId()
     const tagName = 'Tag ' + tagId
@@ -31,6 +31,6 @@ export async function tagTests (t, space) {
   })
 }
 
-function randomTagId () {
+function randomTagId() {
   return 'test-' + Date.now()
 }
